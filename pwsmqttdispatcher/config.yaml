@@ -13,7 +13,7 @@ arch:
 init: false
 options:
   pws_ip: "127.0.0.1"
-  mqtt_topic: "pwsmqttdispatcher"
+  mqtt_topic: "weather_station/data"
   mqtt_client_id: "pwsmqttdispatcher"
   fetch_interval: "60"
   debug_enabled: false
