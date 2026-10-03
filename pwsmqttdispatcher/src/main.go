@@ -209,10 +209,10 @@ func addCalculatedData(wd WeatherData) WeatherData {
 	dewPoint := libwx.DewPointC(libwx.TempC(wd.Temperature), libwx.RelHumidity(wd.Humidity))
 	wd.DewPoint = roundFloatTo1Decimal(float64(dewPoint))
 
-	recTs, err := dateToUnixTimestamp(wd.ReceiverTime)
-	if err == nil {
-		wd.ReceiverTimestamp = recTs
-	}
+	now := time.Now()
+	wd.ReceiverTime = now.Format("15:04 1/2/2006")
+	wd.ReceiverTimestamp = now.Unix()
+
 	return wd
 }
 
