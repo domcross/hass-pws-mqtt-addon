@@ -1,4 +1,7 @@
 ## 0.1.26
+ - patch ReceiverTimestamp
+   
+## 0.1.26
  - More accurate heat index, wind chill, dewpoint values using libwx
  - Bump home-assistant/builder to latest
 
