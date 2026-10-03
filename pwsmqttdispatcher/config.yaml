@@ -3,7 +3,7 @@ name: PWS to MQTT dispatcher addon
 version: "0.1.26"
 slug: pwsmqttdispatcher
 description: Push weather station (PWS) data to MQTT
-url: "https://github.com/peterzen/hass-pws-mqtt-addon/tree/main/pwsmqttdispatcher"
+url: "https://github.com/domcross/hass-pws-mqtt-addon/tree/main/pwsmqttdispatcher"
 arch:
   - amd64
   - aarch64
@@ -23,6 +23,6 @@ schema:
   mqtt_client_id: "str?"
   fetch_interval: "int"
   debug_enabled: "bool"
-image: "ghcr.io/peterzen/{arch}-pwsmqttdispatcher"
+image: "ghcr.io/domcross/{arch}-pwsmqttdispatcher"
 services:
   - mqtt:want
